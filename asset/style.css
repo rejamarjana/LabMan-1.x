@@ -1,0 +1,232 @@
+body, html{
+	/**background-color:#edf8ff;**/
+	background:url("img/pic_bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:1em;
+}
+a{
+	color:#99F;
+}
+hr {
+	margin:10px;
+	background-color: #99F; 
+	height: 1px; 
+	border: 0;
+}
+form{
+	display:block;
+	text-align:left;	
+}
+table {
+	border-collapse: collapse;
+	width:100%;
+}
+
+table, th, td {
+	font-size:small;
+	border:solid 1px #cccccc;
+	background-color:#eeeeee;
+	padding:3px;
+}
+ul, li {
+	display: block;
+	list-style-type: none;
+    list-style-position:inside;
+}
+ul {
+    margin:0;
+    padding:0px;
+}
+li{
+	margin:2px 0;
+    padding:2px;
+	border-left:solid 5px #dddddd;
+	background-color:#eeeeee;
+}
+
+#signin{
+	text-align:center;	
+}
+.container{
+	display:block;
+	background-color:#FFF;
+	max-width:720px;
+	text-align:center;
+	margin:30px auto;
+	padding-bottom:20px;
+	box-shadow: 0px 0px 10px #000000;
+	border-radius:10px;
+}
+.header{
+	padding:10px;
+	display:block;
+	border-radius:10px 10px 0 0;
+	background-color:#99F;
+}
+.button_menu{
+	display:inline-block;
+	padding:5px 30px;
+	margin:5px;
+	text-transform:uppercase;
+	color:#000;
+	text-decoration: none;
+}
+.button_menu:hover{
+	color:#CCC;
+}
+.image-btn{
+	height:90px;
+}
+.footnote{
+	font-size:small;
+	color:#aaa;
+	padding-bottom:10px;
+	display:block;
+	text-align:center;
+}
+.content{
+	display:block;
+	padding:0px 20px;
+	margin:10px 20px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+.button{
+	padding:10px;
+	min-width:80px;
+	border-radius:5px;
+	border:0px;
+	background-color:#99F;
+}
+
+.text_label	{
+	display:inline-block;
+	width:100px;
+	font-weight:bold;
+}
+input[type=text], input[type=password], select {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Customize the label (the container) */
+.rd_container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.rd_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: solid 1px #2196F3;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.rd_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.rd_container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.rd_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #666;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 17px;
+  width: 25%;
+  height:70px;
+}
+
+.tablink:hover {
+  background-color: #CCC;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+	text-align:left;
+	padding: 30px 20px 20px 20px;
+	height: 100%;
+	border:1px solid #666;
+}
